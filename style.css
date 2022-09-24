@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F3EAE3;
+}
+
+.mobimg {
+    display: none;
+}
+
+.attribution {
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 4vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.card {
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+}
+
+.card .texts {
+    width: 50vh;
+    height: 70vh;
+}
+
+.dtimg {
+    display: block;
+}
+
+.card .image {
+    width: 50vh;
+    height: 70vh;
+}
+
+.card .image .dtimg {
+    max-width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    max-height: 100%;
+}
+
+.container .card .texts {
+    padding-top: 2rem;
+    border-radius: 0.5rem;
+    margin-right: 2vh;
+}
+
+.container .card .texts .tittle {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.container .card .texts .brand-name {
+    margin-top: 3vh;
+    font-size: 4.5vh;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    color: rgb(24, 21, 21);
+}
+
+.brand-namemob {
+    display: none;
+}
+
+.container .card .texts .description {
+    margin-top: 3vh;
+    color: rgb(48, 45, 45);
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.container .card .texts .price {
+    margin-top: 3.5vh;
+}
+
+.container .card .texts .price .now {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5vh;
+    color: #3D8168;
+}
+
+.container .card .texts .price .old {
+    font-size: 2.5vh;
+    color: black;
+}
+
+.container .card .texts button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3.5vh;
+    width: 100%;
+    margin-right: 2vh;
+    padding: 2vh;
+    background-color: #3D8168;
+    color: #fff;
+    border-radius: .6rem;
+    transition: 0.1s ease-in;
+}
+
+.container .card .texts button:hover {
+    background-color: #237055;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        height: 80vh;
+        width: 50vh;
+    }
+    .mobimg {
+        display: block;
+        max-width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+        max-height: 100%;
+    }
+    .dtimg {
+        display: none;
+    }
+    .container .card .texts {
+        padding-top: .5rem;
+    }
+    .container .card .texts {
+        padding: 1rem 1.5rem;
+    }
+    .container .card .texts .brand-name {
+        margin-top: .5rem;
+        font-size: 4vh;
+    }
+    .brand-namemob {
+        display: block;
+        font-size: 4.5vh;
+        font-weight: bolder;
+        font-family: 'Bree Serif', serif;
+        color: rgb(24, 21, 21);
+    }
+    .brand-name {
+        display: none;
+    }
+    .container .card .texts .description {
+        font-size: 80%;
+        font-weight: bold;
+        margin-top: 2vh;
+    }
+    .container .card .texts .price {
+        margin-top: 1.5vh;
+    }
+    .container .card .texts .price .now {
+        font-size: 3vh;
+    }
+    .container .card .texts .price .old {
+        font-size: 1.9vh;
+    }
+    .container .card .texts button {
+        margin-top: 2vh;
+    }
+    .attribution {
+        font-size: 2vh;
+        text-align: center;
+        margin-top: 6vh;
+    }
+}
