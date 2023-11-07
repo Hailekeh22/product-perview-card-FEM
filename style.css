@@ -35,12 +35,27 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+    position: relative;
 }
 
 .card {
     display: flex;
     border-radius: 0.5rem;
     background-color: aliceblue;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 25.5%;
+    width: auto;
+    height: 100%;
+    width: 46.9%;
+    transition: 0.2s linear;
+    background-color: #9e9188;
+    z-index: -2;
+    border-radius: 0.5rem;
 }
 
 .card .texts {
@@ -50,6 +65,10 @@ body {
 
 .dtimg {
     display: block;
+}
+
+.cartimg {
+    margin-right: .5em;
 }
 
 .card .image {
@@ -94,17 +113,23 @@ body {
 }
 
 .container .card .texts .price {
-    margin-top: 3.5vh;
+    margin-top: 2.5vh;
+}
+
+.price {
+    display: flex;
+    align-items: center;
 }
 
 .container .card .texts .price .now {
     font-family: 'Libre Baskerville', serif;
-    font-size: 5vh;
+    font-size: 6vh;
     color: #3D8168;
 }
 
 .container .card .texts .price .old {
     font-size: 2.5vh;
+    margin-left: 1rem;
     color: black;
 }
 
@@ -112,7 +137,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 3.5vh;
+    margin-top: 1.5rem;
     width: 100%;
     margin-right: 2vh;
     padding: 2vh;
@@ -123,7 +148,11 @@ body {
 }
 
 .container .card .texts button:hover {
-    background-color: #237055;
+    background-color: #1a5e46;
+}
+
+.attribution{
+    margin-top: 5rem;
 }
 
 @media screen and (max-width: 700px) {
